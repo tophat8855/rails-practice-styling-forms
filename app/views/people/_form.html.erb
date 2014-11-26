@@ -33,10 +33,18 @@
       <%= f.date_field :date_of_birth, class: "form-control" %>
     </div>
   </div>
+
   <div class="form-group">
     <%= f.label :bio, class: "col-sm-2 control-label" %>
     <div class="col-sm-6">
       <%= f.text_area :bio, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :height, class: "col-sm-2 control-label" %>
+    <div class="col-sm-6">
+      <%= f.text_field :height, class: "form-control" %>
     </div>
   </div>
 
@@ -49,10 +57,11 @@
     </div>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Create Person", class:"btn btn-info col-sm-offset-2 col-sm-2" %>
-  <div class="actions btn btn-default" %>
-    <%= link_to 'cancel', people_path %>
+  <div class="form-group">
+    <div class="actions">
+      <%= f.submit "Create Person", class:"btn btn-info col-sm-offset-2 " %>
+      <%= link_to 'cancel', people_path, class:"btn btn-default" %>
+    </div>
   </div>
 
 <% end %>
